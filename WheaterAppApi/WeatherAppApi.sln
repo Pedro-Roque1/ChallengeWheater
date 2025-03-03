@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherAppApi", "WeatherAppApi.csproj", "{92E61AD3-7D48-44B5-95FB-483198173CE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{E8B8E7B8-EC9E-4F40-929D-8DB7F974BE14}"
+	ProjectSection(SolutionItems) = preProject
+		.gitinore = .gitinore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92E61AD3-7D48-44B5-95FB-483198173CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E61AD3-7D48-44B5-95FB-483198173CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E61AD3-7D48-44B5-95FB-483198173CE3}.Debug|x64.ActiveCfg = Debug|x64
+		{92E61AD3-7D48-44B5-95FB-483198173CE3}.Debug|x64.Build.0 = Debug|x64
+		{92E61AD3-7D48-44B5-95FB-483198173CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E61AD3-7D48-44B5-95FB-483198173CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92E61AD3-7D48-44B5-95FB-483198173CE3}.Release|x64.ActiveCfg = Release|x64
+		{92E61AD3-7D48-44B5-95FB-483198173CE3}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

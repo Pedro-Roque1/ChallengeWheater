@@ -1,0 +1,51 @@
+## Ignore .NET Core build results
+bin/
+obj/
+
+## User-specific files
+.idea/
+.vscode/
+
+## ASP.NET files
+appsettings*.json
+secrets.json
+
+## User-specific files
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer files
+Thumbs.db
+ehthumbs.db
+
+# Windows Installer files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+## JetBrains Rider files
+.idea/
+
+## VS Code directories
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+## .NET Core
+# User secrets
+secrets.json
+
+# Windows Installer files
+*.dbmdl
+
+# ASP.NET Core database files
+*.mdf
+*.ldf
