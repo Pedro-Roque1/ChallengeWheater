@@ -24,10 +24,18 @@ namespace WeatherAppApi.Controllers
         [HttpPost("Login")]
         public async Task<ActionResult<User>> Login(UserLoginRequest loginRequest)
         {
-            string token = await _authService.LoginUser(loginRequest);
-            Response.Headers.Add("Authorization", "Bearer " + token);
+            try
+            {
+                string token = await _authService.LoginUser(loginRequest);
+                Response.Headers.Add("Authorization", "Bearer " + token);
 
-            return Ok(token);
+                return Ok(token);
+            }
+            catch (Exception e)
+            {
+                return BadRequest("Login error. Error: " + e.Message);
+            }
+
         }
     }
 }

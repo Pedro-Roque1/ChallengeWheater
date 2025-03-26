@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-center align-items-center min-vh-100 flex-column">
+  <div class="input-group" style="width: 50%; max-width: 600px; margin-bottom: 20px;">
+    <input type="text" [(ngModel)]="city" class="form-control" placeholder="Search city..." aria-label="Search">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" (click)="getWeather()" type="button">Search</button>
+    </div>
+  </div>  
+  <div class="col-6 col-md-4 text-center" *ngFor="let forecast of forecasts">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ forecast.city }} <img src="https://openweathermap.org/img/wn/{{forecast.icon}}.png"></h5>
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="card-text"><strong>Temp:</strong> {{ forecast.temperature }} °C</p>
+          <p class="card-text"><strong>Condição:</strong> {{ forecast.weatherDescription }}</p>
+          <p class="card-text"><strong>Máx:</strong> {{ forecast.maxTemp }} °C</p>
+          <p class="card-text"><strong>Mín:</strong> {{ forecast.minTemp }} °C</p>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <button class="btn btn-outline-warning" (click)="toggleFavorite()">
+            {{ isFavorite ? 'Desfavoritar' : 'Favoritar' }}
+          </button>
+          <button class="btn btn-outline-info" (click)="getForecast()">
+            Previsão 5 Dias
+          </button>
+        </div>
+        <div *ngIf="showfivedays">
+          <div *ngFor="let dailyForecast of forecastsDays" class="card mt-3" style="flex: 1; margin: 0 10px;">
+            <p>{{ "Max: " + dailyForecast.maxTemp + " Min: " + dailyForecast.minTemp }}°C <img src="https://openweathermap.org/img/wn/{{dailyForecast.icon}}.png"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>

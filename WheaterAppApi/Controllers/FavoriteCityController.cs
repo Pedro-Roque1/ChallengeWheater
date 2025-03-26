@@ -9,7 +9,6 @@ namespace WeatherAppApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class FavoriteCityController : ControllerBase
     {
         private readonly ILogger<FavoriteCityController> _logger;
